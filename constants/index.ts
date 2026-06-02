@@ -1,6 +1,7 @@
 import {
   FaEnvelope,
   FaFilePdf,
+  FaGithub,
   FaLinkedin,
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -13,6 +14,7 @@ export const PROFILE = {
   location: "Erode, Tamil Nadu",
   email: "muralidhana2005@gmail.com",
   phone: "9443214437",
+  github: "https://github.com/murali2105",
   linkedIn: "https://linkedin.com/in/muralidharan-dhanasekar",
   resume: "/resume/Muralidharan_Resume.pdf",
   objective:
@@ -309,6 +311,11 @@ export const LEADERSHIP = [
 
 export const SOCIALS = [
   {
+    name: "GitHub",
+    icon: FaGithub,
+    link: PROFILE.github,
+  },
+  {
     name: "LinkedIn",
     icon: FaLinkedin,
     link: PROFILE.linkedIn,
@@ -369,6 +376,11 @@ export const FOOTER_DATA = [
   {
     title: "Profiles",
     data: [
+      {
+        name: "GitHub",
+        icon: FaGithub,
+        link: PROFILE.github,
+      },
       {
         name: "LinkedIn",
         icon: FaLinkedin,

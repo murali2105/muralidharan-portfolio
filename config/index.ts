@@ -24,6 +24,6 @@ export const siteConfig: Metadata = {
   ] as Array<string>,
   authors: {
     name: "Muralidharan D",
-    url: "https://linkedin.com/in/muralidharan-dhanasekar",
+    url: "https://github.com/murali2105",
   },
 } as const;
