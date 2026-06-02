@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { EXPERIENCE_ITEMS, PROFILE } from "@/constants";
+import { publicAsset } from "@/utils/public-asset";
 
 export const Encryption = () => {
   return (
@@ -10,7 +11,10 @@ export const Encryption = () => {
     >
       <div className="absolute inset-0 -z-20 flex items-center justify-center opacity-25">
         <video loop muted autoPlay playsInline preload="false" className="w-full">
-          <source src="/videos/encryption-bg.webm" type="video/webm" />
+          <source
+            src={publicAsset("/videos/encryption-bg.webm")}
+            type="video/webm"
+          />
         </video>
       </div>
 
@@ -58,7 +62,7 @@ export const Encryption = () => {
         <div className="relative">
           <div className="overflow-hidden rounded-lg border border-cyan-300/20 bg-[#040217] shadow-2xl shadow-cyan-950/40">
             <Image
-              src="/projects/disaster-drone-field-photo.jpg"
+              src={publicAsset("/projects/disaster-drone-field-photo.jpg")}
               alt="Disaster management drone in flight"
               width={1200}
               height={720}

@@ -10,6 +10,7 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/lib/motion";
+import { publicAsset } from "@/utils/public-asset";
 
 export const HeroContent = () => {
   return (
@@ -60,7 +61,7 @@ export const HeroContent = () => {
             View Projects
           </a>
           <a
-            href={PROFILE.resume}
+            href={publicAsset(PROFILE.resume)}
             target="_blank"
             rel="noreferrer noopener"
             className="rounded-lg border border-cyan-300/40 px-6 py-3 text-center text-sm font-semibold text-cyan-100 transition hover:border-amber-200/70 hover:text-amber-100"
@@ -93,7 +94,7 @@ export const HeroContent = () => {
       >
         <div className="relative w-full overflow-hidden rounded-lg border border-cyan-300/20 shadow-2xl shadow-cyan-950/40">
           <Image
-            src="/field-images/hero-robotics-workshop.jpg"
+            src={publicAsset("/field-images/hero-robotics-workshop.jpg")}
             alt="Robotics and mechatronics workshop"
             height={900}
             width={1400}

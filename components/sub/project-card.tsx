@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { publicAsset } from "@/utils/public-asset";
+
 type ProjectCardProps = {
   src: string;
   title: string;
@@ -22,7 +24,7 @@ export const ProjectCard = ({
   const content = (
     <article className="flex h-full flex-col overflow-hidden rounded-lg border border-cyan-300/20 bg-[#05031a]/85 shadow-lg shadow-cyan-950/30">
       <Image
-        src={src}
+        src={publicAsset(src)}
         alt={title}
         width={1000}
         height={600}

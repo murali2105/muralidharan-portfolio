@@ -2,6 +2,7 @@ import { SkillDataProvider } from "@/components/sub/skill-data-provider";
 import { SkillText } from "@/components/sub/skill-text";
 
 import { SKILL_GROUPS } from "@/constants";
+import { publicAsset } from "@/utils/public-asset";
 
 export const Skills = () => {
   return (
@@ -40,7 +41,7 @@ export const Skills = () => {
             muted
             autoPlay
           >
-            <source src="/videos/skills-bg.webm" type="video/webm" />
+            <source src={publicAsset("/videos/skills-bg.webm")} type="video/webm" />
           </video>
         </div>
       </div>

@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { LINKS, NAV_LINKS, PROFILE, SOCIALS } from "@/constants";
+import { publicAsset } from "@/utils/public-asset";
 
 const getExternalProps = (href: string) =>
   href.startsWith("http") || href.startsWith("/resume")
@@ -20,7 +21,7 @@ export const Navbar = () => {
       <div className="m-auto flex h-full w-full items-center justify-between px-[10px]">
         <Link href="#about-me" className="flex items-center">
           <Image
-            src="/logo.png"
+            src={publicAsset("/logo.png")}
             alt={`${PROFILE.name} logo`}
             width={58}
             height={58}
