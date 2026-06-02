@@ -1,0 +1,61 @@
+{
+  "name": "muralidharan-portfolio",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "author": {
+    "name": "Muralidharan D",
+    "email": "muralidhana2005@gmail.com",
+    "url": "https://linkedin.com/in/muralidharan-dhanasekar"
+  },
+  "description": "UAV, robotics, embedded systems and VR industrial training portfolio for Muralidharan D.",
+  "keywords": [
+    "mechatronics",
+    "uav",
+    "drones",
+    "robotics",
+    "embedded-systems",
+    "edge-ai",
+    "unity-xr",
+    "blender",
+    "pcb-design",
+    "portfolio",
+    "nextjs",
+    "tailwindcss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.40.0",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-icons": "^5.6.0",
+    "react-intersection-observer": "^10.0.3",
+    "tailwind-merge": "^3.6.0",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25",
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "16.2.6",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.9.2"
+  },
+  "overrides": {
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3"
+  }
+}
