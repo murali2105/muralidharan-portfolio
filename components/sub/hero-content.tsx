@@ -2,7 +2,6 @@
 
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 import { HERO_STATS, PROFILE } from "@/constants";
 import {
@@ -10,6 +9,7 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/lib/motion";
+import { SkillOrbitVisual } from "@/components/sub/skill-orbit-visual";
 import { publicAsset } from "@/utils/public-asset";
 
 export const HeroContent = () => {
@@ -91,27 +91,7 @@ export const HeroContent = () => {
         variants={slideInFromRight(0.8)}
         className="flex h-full w-full max-w-2xl items-center justify-center"
       >
-        <div className="relative w-full overflow-hidden rounded-lg border border-cyan-300/20 shadow-2xl shadow-cyan-950/40">
-          <Image
-            src={publicAsset("/field-images/hero-robotics-workshop.jpg")}
-            alt="Robotics and mechatronics workshop"
-            height={900}
-            width={1400}
-            priority
-            draggable={false}
-            className="aspect-[14/9] w-full select-none object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#030014]/70 via-transparent to-transparent" />
-          <div className="absolute bottom-5 left-5 right-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-100/80">
-              Mechatronics Lab Mindset
-            </p>
-            <p className="mt-2 max-w-md text-sm leading-6 text-gray-200">
-              CAD, electronics, fabrication and XR workflows brought together
-              for working prototypes.
-            </p>
-          </div>
-        </div>
+        <SkillOrbitVisual />
       </motion.div>
     </motion.div>
   );
