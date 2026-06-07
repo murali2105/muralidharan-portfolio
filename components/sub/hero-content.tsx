@@ -17,9 +17,9 @@ export const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex w-full flex-col items-center justify-center gap-12 px-6 pt-28 sm:px-10 lg:mt-20 lg:flex-row lg:px-20 lg:pt-28 z-[20]"
+      className="z-[20] flex w-full flex-col items-center justify-center gap-10 px-6 pb-12 pt-24 sm:px-10 lg:mt-6 lg:flex-row lg:px-20 lg:pt-24"
     >
-      <div className="flex h-full w-full max-w-3xl flex-col justify-center gap-5 text-start">
+      <div className="flex h-full w-full max-w-3xl flex-col justify-center gap-4 text-start">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box border border-[#00f0ff7a] px-[7px] py-[8px] opacity-[0.95]"
@@ -32,19 +32,19 @@ export const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="mt-4 flex h-auto w-auto max-w-[720px] flex-col gap-5 text-white"
+          className="mt-2 flex h-auto w-auto max-w-[720px] flex-col gap-4 text-white"
         >
-          <h1 className="text-5xl font-bold leading-tight sm:text-6xl">
+          <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
             {PROFILE.name}
           </h1>
-          <p className="max-w-[680px] text-2xl font-semibold leading-snug text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-emerald-300 to-amber-200 sm:text-4xl">
+          <p className="max-w-[680px] bg-gradient-to-r from-cyan-300 via-emerald-300 to-amber-200 bg-clip-text text-xl font-semibold leading-snug text-transparent sm:text-3xl lg:text-4xl">
             Building UAVs, robotics systems and immersive VR training tools.
           </p>
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="my-3 max-w-[680px] text-base leading-8 text-gray-300 sm:text-lg"
+          className="max-w-[700px] text-sm leading-7 text-gray-300 sm:text-base lg:text-[17px]"
         >
           {PROFILE.objective}
         </motion.p>
