@@ -196,12 +196,13 @@ export const PROJECTS = [
   {
     title: "FORGE - VR-Based Industrial Training System",
     description:
-      "A completed Meta Quest 3 industrial maintenance training system for hydraulic cylinder servicing, built with a photorealistic Blender environment and Unity XR interactions.",
-    role: "Blender environment, Unity VR interactions and scripting",
+      "Developed a VR-based industrial maintenance training system for hydraulic cylinder servicing on Meta Quest 3, featuring a photorealistic environment created in Blender and immersive interactions built with Unity XR.",
+    role: "Blender environment, Unity XR interactions and scripting",
     impact: [
-      "407+ object hydraulic cylinder workshop modeled with PBR materials",
-      "XR interaction flow completed with Unity XR Toolkit, OpenXR and Meta XR SDK",
-      "Completed through PROTOSEM Innovation Engineers at KCT",
+      "Modeled a hydraulic cylinder workshop with over 407 objects using high-quality PBR materials",
+      "Implemented immersive XR interaction workflows using Unity XR Toolkit, OpenXR, and Meta XR SDK",
+      "Developed and completed the project during the ProtoSem program at FORGE Innovation & Ventures",
+      "Designed to provide realistic, hands-on industrial maintenance training in a virtual environment",
     ],
     tags: ["Completed", "Blender", "Unity XR", "Meta Quest 3", "OpenXR"],
     image: "/projects/forge-current-build-2026.jpg",
