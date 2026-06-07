@@ -46,8 +46,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="my-3 max-w-[680px] text-base leading-8 text-gray-300 sm:text-lg"
         >
-          {PROFILE.objective} Completed FORGE, a Meta Quest 3 industrial
-          maintenance trainer built with Blender, Unity XR and OpenXR.
+          {PROFILE.objective}
         </motion.p>
 
         <motion.div

@@ -18,7 +18,7 @@ export const PROFILE = {
   linkedIn: "https://linkedin.com/in/muralidharan-dhanasekar",
   resume: "/resume/Muralidharan_Resume.pdf",
   objective:
-    "Motivated mechatronics engineering student at Kumaraguru College of Technology with hands-on expertise in UAV systems, embedded electronics, robotics, AI vision and VR-based industrial training.",
+    "Motivated Mechatronics Engineering student at Kumaraguru College of Technology with hands-on experience in UAV systems, embedded electronics, robotics, AI vision, and extended reality (XR) application development. Successfully completed the ProtoSem program at FORGE Innovation & Ventures, where I developed a VR-based industrial training application using Blender, Unity XR, and OpenXR. Passionate about integrating mechanical systems, electronics, and intelligent technologies to create innovative solutions for real-world industrial challenges.",
 } as const;
 
 export const HERO_STATS = [
