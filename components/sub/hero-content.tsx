@@ -2,6 +2,7 @@
 
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 import { HERO_STATS, PROFILE } from "@/constants";
 import {
@@ -9,7 +10,6 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/lib/motion";
-import { SkillOrbitVisual } from "@/components/sub/skill-orbit-visual";
 import { publicAsset } from "@/utils/public-asset";
 
 export const HeroContent = () => {
@@ -89,9 +89,21 @@ export const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="flex h-full w-full max-w-2xl items-center justify-center"
+        className="flex h-full w-full max-w-xl items-center justify-center"
       >
-        <SkillOrbitVisual />
+        <div className="relative flex w-full max-w-[360px] items-center justify-center sm:max-w-[400px] lg:max-w-[440px] xl:max-w-[470px]">
+          <div className="absolute inset-x-8 top-[8%] h-[62%] rounded-full bg-cyan-300/10 blur-3xl" />
+          <div className="absolute inset-x-12 bottom-[12%] h-[40%] rounded-full bg-emerald-300/10 blur-3xl" />
+          <Image
+            src={publicAsset("/field-images/skills-network-orbit.png")}
+            alt="Connected engineering skills orbit for UAV, robotics, Arduino, Python, Unity and CAD"
+            width={1536}
+            height={2752}
+            priority
+            draggable={false}
+            className="relative z-10 h-auto max-h-[66vh] w-full select-none object-contain drop-shadow-[0_0_32px_rgba(125,249,255,0.28)] sm:max-h-[70vh] lg:max-h-[76vh]"
+          />
+        </div>
       </motion.div>
     </motion.div>
   );
