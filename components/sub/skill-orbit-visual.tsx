@@ -139,12 +139,11 @@ const connectorPaths = [
 
 export const SkillOrbitVisual = () => {
   return (
-    <div className="relative aspect-square w-full max-w-[560px] overflow-hidden rounded-lg border border-cyan-300/20 bg-[#020613]/95 shadow-2xl shadow-cyan-950/40">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(34,211,238,0.18),transparent_38%),radial-gradient(circle_at_15%_10%,rgba(168,85,247,0.24),transparent_32%),linear-gradient(135deg,rgba(15,23,42,0.92),rgba(2,6,23,0.98))]" />
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(103,232,249,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(103,232,249,0.08)_1px,transparent_1px)] bg-[size:72px_72px] opacity-60" />
-      <div className="absolute inset-8 rounded-full border border-white/25" />
-      <div className="absolute inset-[22%] rounded-full border border-cyan-200/25" />
-      <div className="absolute inset-[34%] rounded-full border border-white/10" />
+    <div className="relative aspect-square w-full max-w-[560px] overflow-visible">
+      <div className="absolute inset-8 rounded-full bg-cyan-300/5 blur-3xl" />
+      <div className="absolute inset-8 rounded-full border border-white/30" />
+      <div className="absolute inset-[22%] rounded-full border border-cyan-200/30" />
+      <div className="absolute inset-[34%] rounded-full border border-white/15" />
 
       <motion.svg
         aria-hidden="true"
@@ -168,19 +167,19 @@ export const SkillOrbitVisual = () => {
             fill="none"
             stroke="url(#skill-line)"
             strokeLinecap="round"
-            strokeWidth="0.35"
+            strokeWidth="0.45"
           />
         ))}
         <path
           d="M17 62 C27 36 68 28 84 55 C90 72 72 88 51 75 C31 87 10 79 17 62Z"
           fill="none"
-          stroke="rgba(255,255,255,0.42)"
-          strokeWidth="0.28"
+          stroke="rgba(255,255,255,0.55)"
+          strokeWidth="0.34"
         />
       </motion.svg>
 
       <motion.div
-        className="absolute left-1/2 top-1/2 z-20 flex h-20 w-20 flex-col items-center justify-center rounded-full border border-cyan-300/65 bg-[#020817]/95 text-center shadow-[0_0_45px_rgba(34,211,238,0.22)] sm:h-28 sm:w-28"
+        className="absolute left-1/2 top-1/2 z-20 flex h-20 w-20 flex-col items-center justify-center rounded-full border border-cyan-300/70 bg-[#020817]/70 text-center shadow-[0_0_45px_rgba(34,211,238,0.28)] backdrop-blur-md sm:h-28 sm:w-28"
         initial={{ opacity: 0, scale: 0.75, x: "-50%", y: "-50%" }}
         animate={{ opacity: 1, scale: 1, x: "-50%", y: "-50%" }}
         transition={{ duration: 0.55, delay: 0.35 }}
@@ -198,7 +197,7 @@ export const SkillOrbitVisual = () => {
         return (
           <motion.div
             key={node.label}
-            className={`${node.position} ${accent.card} absolute z-20 flex h-16 w-16 flex-col items-center justify-center rounded-lg border bg-white/[0.055] p-1.5 text-center shadow-lg backdrop-blur-md sm:h-[88px] sm:w-[88px] sm:p-2`}
+            className={`${node.position} ${accent.card} absolute z-20 flex h-16 w-16 flex-col items-center justify-center rounded-lg border bg-[#020817]/55 p-1.5 text-center shadow-lg backdrop-blur-md sm:h-[88px] sm:w-[88px] sm:p-2`}
             initial={{
               opacity: 0,
               scale: 0.7,
@@ -223,8 +222,6 @@ export const SkillOrbitVisual = () => {
           </motion.div>
         );
       })}
-
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#020613] to-transparent" />
     </div>
   );
 };
